@@ -1,0 +1,558 @@
+/* ==========================================================================
+   Altura Andaimes Styles
+   ========================================================================== */
+
+/* ==========================================================================
+   @imports
+   ========================================================================== */
+
+@import url(font.css);
+
+/* ==========================================================================
+   Bases
+   ========================================================================== */
+
+*,
+*:after,
+*::before {
+  -moz-box-sizing: border-box;
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  -webkit-box-sizing: border-box;
+  -webkit-transition: all .2s ease;
+  box-sizing: border-box;
+  transition: all .2s ease;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+body {
+  background: #292728;
+  font-size: 1em;
+  line-height: 1.4;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, p, strong {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+strong {
+  font-weight: normal;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a, button {
+  cursor: pointer;
+  display: block;
+  outline: none;
+}
+
+a {
+  overflow: hidden;
+  text-decoration: none;
+}
+
+button, fieldset, input {
+  border: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+input, textarea, select {
+  border: none;
+  font-family: sans-serif;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Nav
+   ========================================================================== */
+
+#nav {
+  background: #fdc047;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+#nav .icon-menu {
+  display: none;
+}
+
+#nav .nav-main {
+  overflow: hidden;
+  padding: 0 10%;
+  width: 100%;
+}
+
+#nav .item {
+  display: block;
+  position: relative;
+  width: 25%;
+}
+
+#nav .item.item-contact a {
+  padding-left: 12%;
+}
+
+#nav .item-contact .icon {
+  background: url('../img/icon-contact.png') no-repeat left center;
+  height: 100%;
+  left: 14%;
+  position: absolute;
+  top: 0;
+  width: 16px;
+}
+
+#nav .item a {
+  color: #403c35;
+  font-family: 'klavika_rgregular';
+  font-size: 18px;
+  padding: 18px 6%;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+#nav .item .active {
+  background: #eea332;
+  color: #fff;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+#header {
+  position: relative;
+}
+
+#header .group {
+  padding: 116px 9% 60px;
+}
+
+#header .logo {
+  position: relative;
+  width: 100%;
+}
+
+#header .logo img {
+  display: block;
+  margin: 0 auto;
+  max-width: 439px;
+  width: 100%;
+}
+
+/* ==========================================================================
+   Main
+   ========================================================================== */
+
+/* ==========================================================================
+   Section: Intro
+   ========================================================================== */
+
+#intro .group {
+  padding-bottom: 10%;
+}
+
+#intro h1, #intro p {
+  text-align: center;
+}
+
+#intro h1 {
+  color: #fff;
+  font-family: 'klinic_slablight';
+  font-size: 53px;
+  line-height: 52px;
+  margin-bottom: 18px;
+}
+
+#intro h1 strong {
+  font-family: 'klinic_slabmedium';
+}
+
+#intro p {
+  color: #a1a1a1;
+  font-family: 'klavikalight';
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
+#intro .chart {
+  border-bottom: 1px solid #a7b6bf;
+  border-top: 1px solid #a7b6bf;
+  margin: 0 auto 20px;
+  max-width: 630px;
+  overflow: hidden;
+  padding: 18px 0;
+  width: 100%;
+}
+
+#intro .chart img {
+  display: block;
+  margin: 0 auto;
+  max-width: 623px;
+  width: 100%;
+}
+
+#intro .budget {
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 630px;
+  width: 100%;
+}
+
+#intro .budget .title {
+  color: #fff;
+  display: inline-block;
+  float: left;
+  font-family: 'klavika_bdbold';
+  font-size: 23px;
+  font-weight: normal;
+  line-height: normal;
+  padding: 5px 0 10px;
+  text-align: center;
+}
+
+#intro .budget .button {
+  background: #fdb931;
+  color: #292728;
+  display: inline-block;
+  float: right;
+  font-family: 'klavika_bdbold';
+  font-size: 20px;
+  padding: 9px 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 256px;
+}
+
+/* ==========================================================================
+   Section: About
+   ========================================================================== */
+
+#about {
+  background: url('../img/bg-about.jpg') no-repeat 50% 0 fixed;
+}
+
+#about .group {
+  padding: 5% 9%;
+}
+
+#about h1 {
+  color: #434444;
+  font-family: 'klinic_slablight';
+  font-size: 65px;
+  line-height: 60px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+#about h1 strong {
+  font-family: 'klinic_slabmedium';
+}
+
+#about p {
+  color: #1f1f1f;
+  font-family: 'klavika_rgregular';
+  font-size: 14px;
+  line-height: 22px;
+  padding-right: 40%;
+  text-align: left;
+}
+
+/* ==========================================================================
+   Section: Clients
+   ========================================================================== */
+
+#clients .group {
+  padding: 10% 9%;
+}
+
+#clients h1 {
+  color: #fdb933;
+  font-family: 'klinic_slablight';
+  font-size: 50px;
+  line-height: normal;
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+#clients .brands {
+  overflow: hidden;
+}
+
+#clients .brands img {
+  display: block;
+  margin: 0 auto;
+  max-width: 718px;
+  width: 100%;
+}
+
+/* ==========================================================================
+   Section: Contact
+   ========================================================================== */
+
+#contact {
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+}
+
+#contact .group {
+  padding-bottom: 30px;
+}
+
+#contact h1 {
+  color: #fdb933;
+  font-family: 'klinic_slablight';
+  font-size: 50px;
+  line-height: normal;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+#contact p {
+  line-height: 32px;
+}
+
+#contact .city {
+  display: inline-block;
+  font-family: 'klavikalight';
+  color: #fdb933;
+  font-size: 26px;
+}
+
+#contact .tel, #contact .email {
+  color: #fff;
+  display: inline-block;
+  font-family: 'klavikalight';
+  font-size: 28px;
+}
+
+#contact .prefix {
+  color: #a7a9ac;
+  font-size: 26px;
+}
+
+#contact .email {
+  line-height: 34px;
+  text-transform: lowercase;
+}
+
+#contact .address {
+  color: #939598;
+  display: block;
+  font-family: 'klavikalight';
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+  padding: 20px 0 0;
+  position: relative;
+}
+
+#contact .address:before, #contact .address:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  height: 2px;
+  position: relative;
+  width: 120px;
+}
+
+#contact .address:before {
+  border-top: 2px dotted #e6e6e6;
+  padding-top: 20px;
+}
+
+#contact .address:after {
+  border-bottom: 2px dotted #e6e6e6;
+  padding-bottom: 20px;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+#footer {
+  position: relative;
+}
+
+#footer .copy {
+  padding: 20px 0;
+}
+
+#footer .copy p {
+  color: #787878;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  line-height: normal;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#footer .copy strong {
+  color: #3f3f3f;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.row {
+    clear: both;
+    overflow: hidden;
+}
+
+.col, .item {
+    float: left;
+}
+
+.list {
+    overflow: hidden;
+}
+
+.hide {
+    display: none;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.section {
+  position: relative;
+}
+
+.group {
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 9%;
+  max-width: 960px;
+  width: 100%;
+}
+
+.group:before,
+.group:after {
+    content: " ";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media all and (max-width: 890px) {
+  #nav .item.item-contact a {
+    padding-left: inherit; 
+  }
+  
+  #nav .item-contact .icon {
+    display: none;
+  }
+}
+
+@media all and (max-width: 780px) {
+  #nav .group {
+    padding: 0 2%;
+  }
+
+  #nav .nav-main {
+    padding: 0;
+  }
+
+  #nav .item a {
+    font-size: 14px;
+    padding: 18px 2%;
+  }
+
+  #intro .budget {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 630px;
+    width: 100%;
+  }
+
+  #intro .budget .title, #intro .budget .button {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+
+  #about .group {
+    padding: 5% 9%;
+  }
+
+  #about h1 {
+    font-size: 50px;
+    line-height: 45px;
+    margin-bottom: 20px;
+  }
+
+  #about p {
+    padding-right: 0;
+  }
+
+  #contact {
+    width: 90%;
+  }
+
+  #contact p {
+    margin-bottom: 10px;
+  }
+}
+
+@media all and (max-width: 580px) {
+  #header .group {
+    padding: 106px 9% 50px;
+  }
+
+  #header .logo img {
+    width: 80%;
+  }
+}
